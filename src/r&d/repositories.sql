@@ -1,64 +1,20 @@
-DROP TABLE IF EXISTS repositories;
-
-CREATE TABLE repositories (
-    id INT PRIMARY KEY AUTO_INCREMENT ,
-    name VARCHAR(32) UNIQUE NOT NULL ,
-    link VARCHAR(128) UNIQUE NOT NULL ,
-    level ENUM ('p0', 'p1', 'p2', 'p3') NOT NULL ,
-    create_time DATETIME NOT NULL ,
-    update_time DATETIME NOT NULL ,
-    in_use BOOLEAN NOT NULL DEFAULT 1 ,
-    project_id INT UNIQUE NOT NULL ,
-    FOREIGN KEY (project_id) REFERENCES projects(id)
-);
-
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('SALICYLIC ACID', 'https://typepad.com/in/sagittis/dui/vel.html', 'p0', STR_TO_DATE('11/02/2021', '%m/%d/%Y'), STR_TO_DATE('07/02/2022', '%m/%d/%Y'), false, 1);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('buprenorphine', 'http://booking.com/semper/rutrum/nulla/nunc.json', 'p2', STR_TO_DATE('10/03/2021', '%m/%d/%Y'), STR_TO_DATE('08/26/2022', '%m/%d/%Y'), true, 2);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('English Walnut', 'https://pagesperso-orange.fr/amet/consectetuer/adipiscing/elit/proin.xml', 'p1', STR_TO_DATE('01/26/2022', '%m/%d/%Y'), STR_TO_DATE('05/19/2022', '%m/%d/%Y'), true, 3);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('SODIUM CHLORIDE', 'https://cbc.ca/nulla/tellus/in/sagittis.json', 'p1', STR_TO_DATE('03/04/2022', '%m/%d/%Y'), STR_TO_DATE('07/13/2022', '%m/%d/%Y'), true, 4);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Octisalate', 'http://berkeley.edu/habitasse/platea/dictumst/aliquam/augue/quam/sollicitudin.jpg', 'p3', STR_TO_DATE('12/13/2021', '%m/%d/%Y'), STR_TO_DATE('07/14/2022', '%m/%d/%Y'), false, 5);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Acetaminophen', 'https://epa.gov/orci/luctus/et.jpg', 'p2', STR_TO_DATE('12/31/2021', '%m/%d/%Y'), STR_TO_DATE('05/22/2022', '%m/%d/%Y'), false, 6);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('ranitidine', 'http://bing.com/nec/nisi/volutpat/eleifend/donec/ut.json', 'p1', STR_TO_DATE('11/10/2021', '%m/%d/%Y'), STR_TO_DATE('07/23/2022', '%m/%d/%Y'), false, 7);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('BENAPHETAMINE', 'https://e-recht24.de/nisl.js', 'p3', STR_TO_DATE('02/05/2022', '%m/%d/%Y'), STR_TO_DATE('07/09/2022', '%m/%d/%Y'), false, 8);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Vasopressin', 'https://mayoclinic.com/felis/sed/lacus/morbi/sem/mauris.jpg', 'p0', STR_TO_DATE('02/28/2022', '%m/%d/%Y'), STR_TO_DATE('07/04/2022', '%m/%d/%Y'), false, 9);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Cephalexin', 'https://cpanel.net/parturient/montes/nascetur/ridiculus/mus/etiam.html', 'p3', STR_TO_DATE('01/24/2022', '%m/%d/%Y'), STR_TO_DATE('05/10/2022', '%m/%d/%Y'), true, 10);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Octocrylene and Titanium dioxide', 'http://dot.gov/cubilia/curae/nulla/dapibus/dolor/vel.json', 'p1', STR_TO_DATE('03/23/2022', '%m/%d/%Y'), STR_TO_DATE('08/26/2022', '%m/%d/%Y'), true, 11);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('PRAMIPEXOLE DIHYDROCHLORIDE', 'https://instagram.com/nulla/eget/eros.aspx', 'p0', STR_TO_DATE('01/12/2022', '%m/%d/%Y'), STR_TO_DATE('06/17/2022', '%m/%d/%Y'), true, 12);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('OCTINOXATE, OCTISALATE', 'http://w3.org/pede/malesuada/in.aspx', 'p2', STR_TO_DATE('03/04/2022', '%m/%d/%Y'), STR_TO_DATE('07/29/2022', '%m/%d/%Y'), false, 13);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Nicotine Polacrilex', 'https://delicious.com/duis/mattis/egestas.json', 'p2', STR_TO_DATE('10/27/2021', '%m/%d/%Y'), STR_TO_DATE('09/17/2022', '%m/%d/%Y'), true, 14);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('acetylcholine chloride', 'http://unblog.fr/placerat.aspx', 'p0', STR_TO_DATE('12/26/2021', '%m/%d/%Y'), STR_TO_DATE('05/27/2022', '%m/%d/%Y'), false, 15);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Hyoscyamine Sulfate', 'http://intel.com/morbi/porttitor.jsp', 'p3', STR_TO_DATE('10/31/2021', '%m/%d/%Y'), STR_TO_DATE('06/19/2022', '%m/%d/%Y'), true, 16);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Polacrilex', 'https://booking.com/enim/leo/rhoncus/sed/vestibulum/sit.png', 'p1', STR_TO_DATE('10/31/2021', '%m/%d/%Y'), STR_TO_DATE('06/09/2022', '%m/%d/%Y'), true, 17);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('AVOBENZONE HOMOSALATE', 'https://mac.com/eget/rutrum/at.jsp', 'p2', STR_TO_DATE('12/17/2021', '%m/%d/%Y'), STR_TO_DATE('06/17/2022', '%m/%d/%Y'), true, 18);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Calendula Officinalis', 'http://paypal.com/nulla/facilisi/cras/non/velit/nec.xml', 'p2', STR_TO_DATE('02/18/2022', '%m/%d/%Y'), STR_TO_DATE('05/12/2022', '%m/%d/%Y'), true, 19);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('lorazepam', 'https://linkedin.com/non/velit/nec/nisi/vulputate/nonummy.html', 'p1', STR_TO_DATE('02/07/2022', '%m/%d/%Y'), STR_TO_DATE('07/09/2022', '%m/%d/%Y'), false, 20);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('BENZALKONIUM CHLORIDE', 'http://ovh.net/varius/integer/ac/leo/pellentesque/ultrices/mattis.js', 'p3', STR_TO_DATE('04/22/2022', '%m/%d/%Y'), STR_TO_DATE('08/14/2022', '%m/%d/%Y'), false, 21);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('dimethicone', 'http://bbb.org/ante/vestibulum/ante/ipsum/primis/in/faucibus.json', 'p0', STR_TO_DATE('11/13/2021', '%m/%d/%Y'), STR_TO_DATE('08/21/2022', '%m/%d/%Y'), true, 22);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('PYRITHIONE ZINC', 'https://engadget.com/nisi/eu/orci/mauris.json', 'p0', STR_TO_DATE('04/26/2022', '%m/%d/%Y'), STR_TO_DATE('08/02/2022', '%m/%d/%Y'), true, 23);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Triclosan', 'https://sogou.com/a/pede/posuere.aspx', 'p1', STR_TO_DATE('12/03/2021', '%m/%d/%Y'), STR_TO_DATE('08/29/2022', '%m/%d/%Y'), true, 24);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('propranolol hydrochloride', 'https://google.cn/eu.js', 'p0', STR_TO_DATE('04/18/2022', '%m/%d/%Y'), STR_TO_DATE('05/01/2022', '%m/%d/%Y'), false, 25);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Amoxicillin', 'http://paypal.com/vestibulum/ante/ipsum.html', 'p3', STR_TO_DATE('01/21/2022', '%m/%d/%Y'), STR_TO_DATE('08/10/2022', '%m/%d/%Y'), true, 26);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Acetaminophen and Codeine', 'https://reference.com/libero/convallis/eget.xml', 'p3', STR_TO_DATE('03/15/2022', '%m/%d/%Y'), STR_TO_DATE('09/06/2022', '%m/%d/%Y'), true, 27);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('bendamustine hydrochloride', 'http://disqus.com/dolor/quis/odio/consequat.js', 'p2', STR_TO_DATE('12/29/2021', '%m/%d/%Y'), STR_TO_DATE('05/24/2022', '%m/%d/%Y'), false, 28);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Magnesium hydroxide', 'http://squarespace.com/est.jpg', 'p3', STR_TO_DATE('01/29/2022', '%m/%d/%Y'), STR_TO_DATE('08/15/2022', '%m/%d/%Y'), false, 29);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Oxcarbazepine', 'https://eepurl.com/elit/proin/interdum/mauris/non/ligula/pellentesque.xml', 'p1', STR_TO_DATE('11/26/2021', '%m/%d/%Y'), STR_TO_DATE('05/29/2022', '%m/%d/%Y'), true, 30);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Ranitidine Oxide', 'https://sina.com.cn/tincidunt/lacus.png', 'p0', STR_TO_DATE('03/14/2022', '%m/%d/%Y'), STR_TO_DATE('08/28/2022', '%m/%d/%Y'), false, 31);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Phentermine Hydrochloride', 'http://mapquest.com/nulla/ultrices/aliquet/maecenas/leo.png', 'p0', STR_TO_DATE('12/25/2021', '%m/%d/%Y'), STR_TO_DATE('09/02/2022', '%m/%d/%Y'), false, 32);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Alcohol', 'http://time.com/turpis/integer/aliquet/massa/id/lobortis/convallis.jsp', 'p1', STR_TO_DATE('02/02/2022', '%m/%d/%Y'), STR_TO_DATE('08/25/2022', '%m/%d/%Y'), false, 33);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Benazepril hydrochloride', 'https://wikimedia.org/pede/ac.json', 'p3', STR_TO_DATE('10/05/2021', '%m/%d/%Y'), STR_TO_DATE('06/15/2022', '%m/%d/%Y'), true, 34);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Hydrochlorothiazide', 'https://abc.net.au/dui/vel.png', 'p2', STR_TO_DATE('03/19/2022', '%m/%d/%Y'), STR_TO_DATE('09/25/2022', '%m/%d/%Y'), false, 35);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Trihexyphenidyl Hydrochloride', 'https://theatlantic.com/lorem/integer.js', 'p2', STR_TO_DATE('03/09/2022', '%m/%d/%Y'), STR_TO_DATE('05/04/2022', '%m/%d/%Y'), true, 36);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('COPPER', 'https://meetup.com/nulla/dapibus/dolor.aspx', 'p0', STR_TO_DATE('01/06/2022', '%m/%d/%Y'), STR_TO_DATE('07/26/2022', '%m/%d/%Y'), true, 37);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('PROPYLENE GLYCOL', 'http://google.ca/luctus/et/ultrices/posuere/cubilia/curae.png', 'p2', STR_TO_DATE('10/04/2021', '%m/%d/%Y'), STR_TO_DATE('08/08/2022', '%m/%d/%Y'), false, 38);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Cimicifuga racemosa', 'http://europa.eu/ac/neque.jpg', 'p1', STR_TO_DATE('10/20/2021', '%m/%d/%Y'), STR_TO_DATE('08/27/2022', '%m/%d/%Y'), false, 39);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Chlorpheniramine Maleate', 'http://yandex.ru/dapibus/at/diam/nam/tristique/tortor.aspx', 'p0', STR_TO_DATE('10/07/2021', '%m/%d/%Y'), STR_TO_DATE('07/26/2022', '%m/%d/%Y'), false, 40);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Mugwort', 'http://walmart.com/rhoncus/aliquet/pulvinar/sed/nisl.png', 'p0', STR_TO_DATE('11/02/2021', '%m/%d/%Y'), STR_TO_DATE('07/30/2022', '%m/%d/%Y'), false, 41);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('testosterone', 'http://newyorker.com/ligula/pellentesque/ultrices/phasellus/id.jsp', 'p1', STR_TO_DATE('01/01/2022', '%m/%d/%Y'), STR_TO_DATE('06/07/2022', '%m/%d/%Y'), false, 42);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('AZTREONAM', 'http://artisteer.com/dolor/vel/est.jpg', 'p1', STR_TO_DATE('02/23/2022', '%m/%d/%Y'), STR_TO_DATE('07/31/2022', '%m/%d/%Y'), false, 43);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Glycopyrrolate', 'http://comcast.net/libero/ut/massa/volutpat/convallis.jsp', 'p2', STR_TO_DATE('04/26/2022', '%m/%d/%Y'), STR_TO_DATE('05/04/2022', '%m/%d/%Y'), false, 44);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Ibuprofen', 'https://walmart.com/pellentesque.html', 'p1', STR_TO_DATE('01/16/2022', '%m/%d/%Y'), STR_TO_DATE('08/31/2022', '%m/%d/%Y'), true, 45);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Codeine Phosphate', 'https://last.fm/adipiscing/lorem.aspx', 'p0', STR_TO_DATE('01/06/2022', '%m/%d/%Y'), STR_TO_DATE('05/03/2022', '%m/%d/%Y'), false, 46);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('influenza virus vaccine', 'https://kickstarter.com/ipsum/primis/in.aspx', 'p3', STR_TO_DATE('11/17/2021', '%m/%d/%Y'), STR_TO_DATE('05/22/2022', '%m/%d/%Y'), true, 47);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Anti-bacterial Hand Wash', 'https://blogtalkradio.com/lorem/vitae/mattis/nibh/ligula.jpg', 'p3', STR_TO_DATE('03/03/2022', '%m/%d/%Y'), STR_TO_DATE('06/15/2022', '%m/%d/%Y'), true, 48);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('gemcitabine', 'https://businessinsider.com/consequat/morbi.js', 'p0', STR_TO_DATE('04/05/2022', '%m/%d/%Y'), STR_TO_DATE('08/30/2022', '%m/%d/%Y'), false, 49);
-INSERT INTO repositories (name, link, level, create_time, update_time, in_use, project_id) VALUES ('Alcoholoxide', 'https://chron.com/consequat/dui/nec.json', 'p0', STR_TO_DATE('10/20/2021', '%m/%d/%Y'), STR_TO_DATE('08/10/2022', '%m/%d/%Y'), true, 50);
+DECLARE
+BEGIN
+    EXECUTE IMMEDIATE 'CREATE TABLE repositories
+        (
+            id INT GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
+            name VARCHAR(32) UNIQUE NOT NULL,
+            link VARCHAR(128) UNIQUE NOT NULL,
+            access_level CHAR(2) CHECK(access_level IN (''p0'',''p1'',''p2'', ''p3'')) NOT NULL,
+            create_time DATE NOT NULL,
+            update_time DATE NOT NULL,
+            in_use CHAR(1) DEFAULT ON NULL (''Y'') CHECK(in_use IN (''Y'', ''N'')),
+            project_id INT UNIQUE NOT NULL,
+            CONSTRAINT repositories_project_id_fk FOREIGN KEY (project_id) REFERENCES projects (id),
+            CONSTRAINT repositories_id_pk PRIMARY KEY (id)
+        )';
+    EXCEPTION WHEN OTHERS THEN
+        IF SQLCODE = -955 THEN NULL ;
+        ELSE RAISE ;
+        END IF;
+END;

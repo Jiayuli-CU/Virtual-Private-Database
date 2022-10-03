@@ -1,62 +1,18 @@
-DROP TABLE IF EXISTS projects;
-
-CREATE TABLE projects (
-    id INT PRIMARY KEY AUTO_INCREMENT ,
-    name VARCHAR(32) UNIQUE NOT NULL ,
-    description TEXT NOT NULL ,
-    due DATETIME NOT NULL ,
-    est_member_num TINYINT NOT NULL ,
-    level ENUM ('p0', 'p1', 'p2', 'p3') NOT NULL ,
-    status ENUM ('dev', 'test', 'prod') NOT NULL
-);
-
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Cookley', 'In est risus, auctor sed, tristique in, tempus sit amet, sem.', STR_TO_DATE('11/27/2021', '%m/%d/%Y'), 6, 'p3', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Mat Lam Tam', 'Aliquam non mauris.', STR_TO_DATE('08/05/2022', '%m/%d/%Y'), 7, 'p2', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Tempsoft', 'Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', STR_TO_DATE('08/24/2022', '%m/%d/%Y'), 9, 'p0', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Stronghold', 'Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', STR_TO_DATE('03/17/2022', '%m/%d/%Y'), 7, 'p1', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Ronstring', 'Maecenas pulvinar lobortis est.', STR_TO_DATE('05/06/2022', '%m/%d/%Y'), 3, 'p1', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Kanlam', 'Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.', STR_TO_DATE('06/27/2022', '%m/%d/%Y'), 9, 'p2', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Hatity', 'Praesent lectus.', STR_TO_DATE('09/20/2022', '%m/%d/%Y'), 7, 'p2', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Biodex', 'Integer ac neque. Duis bibendum.', STR_TO_DATE('10/20/2021', '%m/%d/%Y'), 5, 'p1', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Overhold', 'Etiam pretium iaculis justo. In hac habitasse platea dictumst.', STR_TO_DATE('10/24/2022', '%m/%d/%Y'), 8, 'p3', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Mat Lim Tom', 'Ut tellus.', STR_TO_DATE('12/25/2021', '%m/%d/%Y'), 7, 'p0', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Lotlux', 'Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.', STR_TO_DATE('10/25/2021', '%m/%d/%Y'), 4, 'p0', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Fix San', 'Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl.', STR_TO_DATE('08/09/2022', '%m/%d/%Y'), 8, 'p0', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Alphazap', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.', STR_TO_DATE('04/27/2022', '%m/%d/%Y'), 10, 'p2', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Quo Lux', 'Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.', STR_TO_DATE('10/29/2021', '%m/%d/%Y'), 6, 'p1', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Bitchip', 'Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.', STR_TO_DATE('02/03/2022', '%m/%d/%Y'), 4, 'p1', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Latlux', 'Nulla tellus.', STR_TO_DATE('09/23/2022', '%m/%d/%Y'), 3, 'p0', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Cardguard', 'Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue.', STR_TO_DATE('03/08/2022', '%m/%d/%Y'), 5, 'p3', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Daltfresh', 'Nulla nisl. Nunc nisl.', STR_TO_DATE('07/04/2022', '%m/%d/%Y'), 5, 'p0', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Andalax', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', STR_TO_DATE('12/22/2021', '%m/%d/%Y'), 9, 'p3', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Lutlax', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna.', STR_TO_DATE('05/26/2022', '%m/%d/%Y'), 7, 'p3', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Temp', 'In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices.', STR_TO_DATE('01/03/2022', '%m/%d/%Y'), 10, 'p2', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Subin', 'Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor.', STR_TO_DATE('12/21/2021', '%m/%d/%Y'), 5, 'p1', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Stim', 'In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.', STR_TO_DATE('02/07/2022', '%m/%d/%Y'), 6, 'p1', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Treeflex', 'Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', STR_TO_DATE('10/25/2021', '%m/%d/%Y'), 9, 'p0', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Sonsing', 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend.', STR_TO_DATE('03/01/2022', '%m/%d/%Y'), 4, 'p2', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Job', 'Mauris ullamcorper purus sit amet nulla.', STR_TO_DATE('10/29/2022', '%m/%d/%Y'), 5, 'p0', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Job-nob', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', STR_TO_DATE('03/02/2022', '%m/%d/%Y'), 6, 'p1', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Siban', 'Nunc purus. Phasellus in felis. Donec semper sapien a libero.', STR_TO_DATE('04/09/2022', '%m/%d/%Y'), 6, 'p3', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Kenlim', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', STR_TO_DATE('05/15/2022', '%m/%d/%Y'), 4, 'p0', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Cardify', 'Proin eu mi. Nulla ac enim.', STR_TO_DATE('10/14/2022', '%m/%d/%Y'), 9, 'p2', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Latlix', 'In sagittis dui vel nisl. Duis ac nibh.', STR_TO_DATE('10/11/2021', '%m/%d/%Y'), 6, 'p2', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Redhold', 'Nullam molestie nibh in lectus.', STR_TO_DATE('05/12/2022', '%m/%d/%Y'), 6, 'p3', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Stringtough', 'Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.', STR_TO_DATE('07/21/2022', '%m/%d/%Y'), 9, 'p3', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Tampflex', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.', STR_TO_DATE('01/20/2022', '%m/%d/%Y'), 9, 'p1', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Prodder', 'Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy.', STR_TO_DATE('07/26/2022', '%m/%d/%Y'), 8, 'p1', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Y-find', 'Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna.', STR_TO_DATE('01/07/2022', '%m/%d/%Y'), 4, 'p0', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Alpha', 'Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.', STR_TO_DATE('01/08/2022', '%m/%d/%Y'), 6, 'p1', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Bitwolf', 'Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', STR_TO_DATE('08/20/2022', '%m/%d/%Y'), 5, 'p0', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Zoolab', 'Donec dapibus. Duis at velit eu est congue elementum.', STR_TO_DATE('01/13/2022', '%m/%d/%Y'), 5, 'p1', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Bamity', 'Morbi non quam nec dui luctus rutrum.', STR_TO_DATE('05/25/2022', '%m/%d/%Y'), 5, 'p2', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Otcom', 'Sed vel enim sit amet nunc viverra dapibus.', STR_TO_DATE('07/09/2022', '%m/%d/%Y'), 9, 'p2', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Greenlam', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', STR_TO_DATE('07/20/2022', '%m/%d/%Y'), 8, 'p1', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('SubinV2', 'Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', STR_TO_DATE('05/16/2022', '%m/%d/%Y'), 8, 'p3', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('LotluxV2', 'Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.', STR_TO_DATE('04/22/2022', '%m/%d/%Y'), 10, 'p1', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Outcoim', 'Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis.', STR_TO_DATE('10/29/2021', '%m/%d/%Y'), 8, 'p3', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Wrapsafe', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.', STR_TO_DATE('08/22/2022', '%m/%d/%Y'), 6, 'p2', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Lotstring', 'Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.', STR_TO_DATE('05/03/2022', '%m/%d/%Y'), 6, 'p0', 'test');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Biodox', 'Phasellus in felis.', STR_TO_DATE('05/10/2022', '%m/%d/%Y'), 3, 'p0', 'dev');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('GotAJob', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', STR_TO_DATE('08/29/2022', '%m/%d/%Y'), 4, 'p2', 'prod');
-INSERT INTO projects (name, description, due, est_member_num, level, status) VALUES ('Fix Sin', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', STR_TO_DATE('05/10/2022', '%m/%d/%Y'), 10, 'p3', 'test');
+DECLARE
+BEGIN
+    EXECUTE IMMEDIATE 'CREATE TABLE projects
+        (
+            id INT GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
+            name VARCHAR(32) UNIQUE NOT NULL,
+            description CLOB NOT NULL,
+            due DATE NOT NULL,
+            est_member_num NUMBER(3) NOT NULL,
+            access_level CHAR(2) CHECK (access_level IN (''p0'', ''p1'', ''p2'', ''p3'')) NOT NULL,
+            status VARCHAR(4) CHECK (status IN (''dev'', ''test'', ''prod'')) NOT NULL,
+            CONSTRAINT projects_id_pk PRIMARY KEY (id)
+        )';
+    EXCEPTION WHEN OTHERS THEN
+        IF SQLCODE = -955 THEN NULL ;
+        ELSE RAISE ;
+        END IF;
+END;

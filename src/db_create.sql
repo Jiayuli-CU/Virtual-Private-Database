@@ -1,1 +1,0 @@
-CREATE DATABASE if not exists company_vpd;
