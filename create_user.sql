@@ -1,0 +1,7 @@
+CREATE USER ad_manager IDENTIFIED BY abcd1234;
+CREATE USER ps_manager IDENTIFIED BY abcd1234;
+
+GRANT CREATE SESSION TO ad_manager;
+GRANT CREATE SESSION TO ps_manager;
+GRANT SELECT ON PARTNERSHIP TO ps_manager;
+GRANT SELECT ON advertisement TO ad_manager;
