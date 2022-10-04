@@ -30,11 +30,7 @@ insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) v
 insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (3, 1, 'Elie', 'Pantling', 'epantling2@timesonline.co.uk', 'Consumer Services');
 insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (4, 1, 'Norene', 'Wilsher', 'nwilsher3@topsy.com', 'Health Care');
 insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (5, 2, 'Malvin', 'Kerner', 'mkerner4@w3.org', 'Health Care');
-insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (6, 2, 'Simmonds', 'Daynter', 'sdaynter5@nyu.edu', 'n/a');
-insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (7, 2, 'Bessy', 'Fountain', 'bfountain6@newsvine.com', 'Public Utilities');
-insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (8, 2, 'Bird', 'Reveley', 'breveley7@spiegel.de', 'Finance');
-insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (9, 3, 'Wainwright', 'Collinwood', 'wcollinwood8@myspace.com', 'n/a');
-insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (10, 3, 'Melony', 'Beszant', 'mbeszant9@bandcamp.com', 'Health Care');
+
 
 insert into ADVERTISEMENTS (id, product_id, manager_id, EXPENSE, COUNTRY) values (1, 1, 'P0004', 82, 'US');
 insert into ADVERTISEMENTS (id, product_id, manager_id, EXPENSE, COUNTRY) values (2, 2, 'P0004', 27, 'US');
