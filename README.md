@@ -5,15 +5,15 @@ CS5322 Database Security Project1
 
 | Username | Password | ROLE       |
 | -------- | -------- | ---------- |
-| alice    | abcd1234 | pd_manager |
-| bob      | abcd1234 | ps_manager |
-| chris    | abcd1234 | ad_manager |
+| P0001 | abcd1234 | pd_manager |
+| P0003 | abcd1234 | pr_manager |
+| P0004 | abcd1234 | ad_manager |
 
 
 
 ### Testing
 
-`connect alice`, then input password
+`connect P0001`, then input password
 
-`select * from system.product_user;` 
+`select * from system.product_users;` 
 
