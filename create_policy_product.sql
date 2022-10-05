@@ -22,7 +22,7 @@ END;
 
 
 --- ad manager can only update the advertisement he or she is working on.
-CREATE FUNCTION check_ad(v_schema IN VARCHAR2, v_obj IN VARCHAR2)
+CREATE OR REPLACE  FUNCTION check_ad(v_schema IN VARCHAR2, v_obj IN VARCHAR2)
 RETURN VARCHAR2 AS condition VARCHAR2 (200); 
 BEGIN
 	condition := 'manager_id = SYS_CONTEXT(''USERENV'', ''SESSION_USER'')';
@@ -40,7 +40,7 @@ BEGIN
 END;
 
 --- pr manager can only update the advertisement he or she is working on.
-CREATE FUNCTION check_partnership(v_schema IN VARCHAR2, v_obj IN VARCHAR2)
+CREATE OR REPLACE FUNCTION check_partnership(v_schema IN VARCHAR2, v_obj IN VARCHAR2)
 RETURN VARCHAR2 AS condition VARCHAR2 (200); 
 BEGIN
 	condition := 'manager_id = SYS_CONTEXT(''USERENV'',''SESSION_USER'')';
