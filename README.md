@@ -6,12 +6,11 @@ CS5322 Database Security Project1
 | Username | Password | ROLE       |
 | -------- | -------- | ---------- |
 | P0001 | abcd1234 | pd_manager |
+| P0002 | Abcd1234 | ds |
 | P0003 | abcd1234 | pr_manager |
 | P0004 | abcd1234 | ad_manager |
 
-
-
-### Testing
+Testing
 
 `connect P0001`, then input password
 

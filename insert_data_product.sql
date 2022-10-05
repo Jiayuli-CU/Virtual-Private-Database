@@ -18,6 +18,7 @@ insert into EMPLOYEES (id, first_name, last_name, gender, department_id, positio
 insert into EMPLOYEES (id, first_name, last_name, gender, department_id, position, access_level, base) values ('P0004', 'Leonidas', 'Starkings', 'Male', 2, 'am', 'p2', 'US');
 insert into EMPLOYEES (id, first_name, last_name, gender, department_id, position, access_level, base) values ('P0005', 'Tiffany', 'Wong', 'Male', 2, 'am', 'p3', 'CN');
 insert into EMPLOYEES (id, first_name, last_name, gender, department_id, position, access_level, base) values ('P0006', 'Alex', 'Berlin', 'Male', 2, 'pr', 'p3', 'SG');
+insert into EMPLOYEES (id, first_name, last_name, gender, department_id, position, access_level, base) values ('P0007', 'Zack', 'Erlane', 'Male', 2, 'pm', 'p3', 'US');
 insert into EMPLOYEES (id, first_name, last_name, gender, department_id, position, access_level, base) values ('M0001', 'Marlene', 'Rutigliano', 'Female', 3, 'ceo', 'p3', 'CN');
 insert into EMPLOYEES (id, first_name, last_name, gender, department_id, position, access_level, base) values ('M0002', 'Wilbur', 'Gowling', 'Male', 3, 'cto', 'p3', 'SG');
 insert into EMPLOYEES (id, first_name, last_name, gender, department_id, position, access_level, base) values ('M0003', 'Jaew', 'Sandra', 'Male', 3, 'cfo', 'p3', 'CN');
@@ -27,7 +28,7 @@ insert into EMPLOYEES (id, first_name, last_name, gender, department_id, positio
 
 insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (1, 1, 'Pru', 'Cornewall', 'pcornewall0@slideshare.net', 'n/a');
 insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (2, 1, 'Nettie', 'Wicklen', 'nwicklen1@pcworld.com', 'Health Care');
-insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (3, 1, 'Elie', 'Pantling', 'epantling2@timesonline.co.uk', 'Consumer Services');
+insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (3, 3, 'Elie', 'Pantling', 'epantling2@timesonline.co.uk', 'Consumer Services');
 insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (4, 1, 'Norene', 'Wilsher', 'nwilsher3@topsy.com', 'Health Care');
 insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (5, 2, 'Malvin', 'Kerner', 'mkerner4@w3.org', 'Health Care');
 
