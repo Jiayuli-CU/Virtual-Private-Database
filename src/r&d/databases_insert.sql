@@ -1,3 +1,5 @@
+TRUNCATE TABLE databases;
+
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (1, 'Bitwolf', 'https://ed.gov', 'p0', '6/22/2022', '3/11/2022', 'Y', 'AU', '35');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (2, 'Holdlamis', 'http://narod.ru', 'p3', '7/26/2022', '8/27/2022', 'N', 'FK', '25');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (3, 'Bamity', 'http://hao123.com', 'p3', '8/14/2022', '4/11/2022', 'N', 'JP', '39');
@@ -424,7 +426,7 @@ insert into databases (id, name, link, access_level, create_time, update_time, i
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (424, 'Fix San', 'https://ow.ly', 'p3', '8/18/2022', '7/28/2022', 'Y', 'JP', '45');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (425, 'Solarbreeze', 'https://ft.com', 'p3', '5/18/2022', '9/19/2022', 'Y', 'BE', '32');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (426, 'Subin', 'http://163.com', 'p3', '1/8/2022', '12/14/2021', 'Y', 'BE', '36');
-insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (427, 'Keylex', 'https://yelp.com', 'p2', '6/25/2022', '2/1/2022', 'Y', 'FK', '00');
+insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (427, 'Keylex', 'https://yelp.com', 'p2', '6/25/2022', '2/1/2022', 'Y', 'FK', '01');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (428, 'Zontrax', 'https://liveinternet.ru', 'p0', '12/25/2021', '5/13/2022', 'N', 'AU', '16');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (429, 'Wrapsafe', 'https://census.gov', 'p3', '10/16/2021', '11/10/2021', 'N', 'AU', '34');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (430, 'Matsoft', 'https://jiathis.com', 'p0', '9/16/2022', '8/5/2022', 'N', 'AU', '41');
@@ -435,7 +437,7 @@ insert into databases (id, name, link, access_level, create_time, update_time, i
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (435, 'Tempsoft', 'http://alexa.com', 'p3', '7/6/2022', '8/26/2022', 'Y', 'BE', '28');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (436, 'Asoka', 'http://samsung.com', 'p3', '9/21/2022', '1/2/2022', 'N', 'BE', '30');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (437, 'Zamit', 'http://hud.gov', 'p3', '5/7/2022', '7/13/2022', 'Y', 'AU', '35');
-insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (438, 'Vagram', 'https://ucoz.ru', 'p3', '7/21/2022', '2/7/2022', 'Y', 'AU', '00');
+insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (438, 'Vagram', 'https://ucoz.ru', 'p3', '7/21/2022', '2/7/2022', 'Y', 'AU', '01');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (439, 'Cardguard', 'https://moonfruit.com', 'p2', '7/6/2022', '7/1/2022', 'N', 'BE', '41');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (440, 'Bigtax', 'http://constantcontact.com', 'p2', '3/4/2022', '6/5/2022', 'Y', 'AU', '46');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (441, 'Greenlam', 'http://bigcartel.com', 'p3', '3/31/2022', '10/24/2021', 'N', 'CN', '41');
@@ -724,7 +726,7 @@ insert into databases (id, name, link, access_level, create_time, update_time, i
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (724, 'Latlux', 'https://clickbank.net', 'p3', '1/20/2022', '9/26/2022', 'Y', 'AU', '39');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (725, 'Veribet', 'https://admin.ch', 'p2', '10/24/2021', '12/3/2021', 'N', 'JP', '43');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (726, 'Ventosanzap', 'https://blinklist.com', 'p3', '5/28/2022', '5/12/2022', 'N', 'FK', '48');
-insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (727, 'Alpha', 'http://blogger.com', 'p3', '12/10/2021', '1/20/2022', 'N', 'BE', '00');
+insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (727, 'Alpha', 'http://blogger.com', 'p3', '12/10/2021', '1/20/2022', 'N', 'BE', '01');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (728, 'Biodex', 'http://storify.com', 'p3', '12/27/2021', '5/12/2022', 'Y', 'AU', '45');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (729, 'Span', 'https://businessinsider.com', 'p3', '4/24/2022', '9/3/2022', 'N', 'CN', '45');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (730, 'Subin', 'http://1688.com', 'p3', '3/7/2022', '9/12/2022', 'Y', 'AU', '23');
@@ -791,10 +793,10 @@ insert into databases (id, name, link, access_level, create_time, update_time, i
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (791, 'Zaam-Dox', 'https://google.fr', 'p3', '1/30/2022', '11/22/2021', 'N', 'AU', '46');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (792, 'Ronstring', 'https://chronoengine.com', 'p3', '12/22/2021', '9/16/2022', 'Y', 'AU', '30');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (793, 'Daltfresh', 'https://harvard.edu', 'p0', '2/5/2022', '5/1/2022', 'Y', 'AU', '28');
-insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (794, 'Cardify', 'https://wikipedia.org', 'p1', '4/27/2022', '11/21/2021', 'Y', 'BE', '00');
+insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (794, 'Cardify', 'https://wikipedia.org', 'p1', '4/27/2022', '11/21/2021', 'Y', 'BE', '01');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (795, 'Latlux', 'http://constantcontact.com', 'p3', '6/30/2022', '11/5/2021', 'N', 'BE', '47');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (796, 'Asoka', 'http://google.it', 'p3', '9/23/2022', '2/23/2022', 'Y', 'FK', '49');
-insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (797, 'Trippledex', 'http://ehow.com', 'p2', '12/17/2021', '7/28/2022', 'Y', 'AU', '00');
+insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (797, 'Trippledex', 'http://ehow.com', 'p2', '12/17/2021', '7/28/2022', 'Y', 'AU', '01');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (798, 'Lotlux', 'https://harvard.edu', 'p3', '7/17/2022', '12/6/2021', 'N', 'AU', '01');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (799, 'Fix San', 'https://mozilla.org', 'p2', '10/20/2021', '6/17/2022', 'N', 'BE', '45');
 insert into databases (id, name, link, access_level, create_time, update_time, in_use, region, repository_id) values (800, 'Fixflex', 'http://behance.net', 'p3', '12/14/2021', '2/12/2022', 'N', 'BE', '48');
