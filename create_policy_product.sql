@@ -33,7 +33,7 @@ END check_ad;
 BEGIN
   DBMS_RLS.ADD_POLICY (
     object_schema => 'system',
-    object_name => 'advertisement',
+    object_name => 'advertisements',
     policy_name => 'check_ad_policy',
     policy_function => 'check_ad',
     statement_types => 'UPDATE');

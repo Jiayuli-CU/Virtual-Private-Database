@@ -25,11 +25,11 @@ insert into EMPLOYEES (id, first_name, last_name, gender, department_id, positio
 
 
 
-insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (1, 1, 'Pru', 'Cornewall', 'pcornewall0@slideshare.net', 'n/a');
-insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (2, 1, 'Nettie', 'Wicklen', 'nwicklen1@pcworld.com', 'Health Care');
-insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (3, 1, 'Elie', 'Pantling', 'epantling2@timesonline.co.uk', 'Consumer Services');
-insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (4, 1, 'Norene', 'Wilsher', 'nwilsher3@topsy.com', 'Health Care');
-insert into PRODUCT_USERS (id, project_id, first_name, last_name, email, tags) values (5, 2, 'Malvin', 'Kerner', 'mkerner4@w3.org', 'Health Care');
+insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (1, 1, 'Pru', 'Cornewall', 'pcornewall0@slideshare.net', 'n/a');
+insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (2, 1, 'Nettie', 'Wicklen', 'nwicklen1@pcworld.com', 'Health Care');
+insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (3, 1, 'Elie', 'Pantling', 'epantling2@timesonline.co.uk', 'Consumer Services');
+insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (4, 1, 'Norene', 'Wilsher', 'nwilsher3@topsy.com', 'Health Care');
+insert into PROJECT_USERS (id, project_id, first_name, last_name, email, tags) values (5, 2, 'Malvin', 'Kerner', 'mkerner4@w3.org', 'Health Care');
 
 
 insert into ADVERTISEMENTS (id, project_id, manager_id, EXPENSE, COUNTRY) values (1, 1, 'P0004', 82, 'US');
