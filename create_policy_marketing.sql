@@ -12,7 +12,7 @@ END check_feedback;
 BEGIN
   DBMS_RLS.ADD_POLICY (
     object_schema => 'system',
-    object_name => 'feedback',
+    object_name => 'project_feedback',
     policy_name => 'check_feedback_policy',
     policy_function => 'check_feedback',
     statement_types => 'UPDATE');
@@ -32,7 +32,7 @@ END check_copywriting;
 BEGIN
   DBMS_RLS.ADD_POLICY (
     object_schema => 'system',
-    object_name => 'copywriting',
+    object_name => 'project_copywriting',
     policy_name => 'check_copywriting_policy',
     policy_function => 'check_copywriting',
     statement_types => 'UPDATE');
