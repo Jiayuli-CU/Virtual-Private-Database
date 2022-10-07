@@ -1,23 +1,3 @@
-CREATE OR REPLACE FUNCTION check_employee(v_schema IN VARCHAR2, v_obj IN VARCHAR2)
-RETURN VARCHAR2 AS condition VARCHAR2 (200); 
-BEGIN
-  IF (SYS_CONTEXT('USERENV', 'SESSION_USER') = 'SYSTEM') THEN
-    return '';
-  ELSE 
-	  condition := 'ID = SYS_CONTEXT(''USERENV'', ''SESSION_USER'')';
-  END IF;
-	  RETURN condition;
-END check_employee;
-
-BEGIN
-  DBMS_RLS.ADD_POLICY (
-    object_schema => 'system',
-    object_name => 'employees',
-    policy_name => 'check_employee_policy',
-    policy_function => 'check_employee',
-    statement_types => 'SELECT, UPDATE');
-END;
-
 CREATE OR REPLACE  FUNCTION check_feedback(v_schema IN VARCHAR2, v_obj IN VARCHAR2)
 RETURN VARCHAR2 AS condition VARCHAR2 (200); 
 BEGIN
