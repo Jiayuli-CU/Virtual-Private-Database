@@ -2,7 +2,7 @@ DECLARE
 BEGIN
     EXECUTE IMMEDIATE 'CREATE TABLE projects
         (
-            id INT GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
+            id INT NOT NULL,
             name VARCHAR(32) UNIQUE NOT NULL,
             description CLOB NOT NULL,
             due DATE NOT NULL,

@@ -21,6 +21,9 @@
 │   └── policies
 └── README.md
 ```
+* **create**: contains all .sql files for creating tables
+* **insert**: contains all .sql files for inserting data into tables
+* **policies**: contains all .sql files for conducting row-based and table-based access controls
 
 ### Database User Table
 
