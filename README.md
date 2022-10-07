@@ -1,5 +1,26 @@
 # Virtual-Private-Database
-CS5322 Database Security Project1
+## CS5322 Database Security Project 1
+
+### Project Structure
+```text
+├── operation
+│   ├── create
+│   ├── insert
+│   └── policies
+├── operation
+│   ├── create
+│   ├── insert
+│   └── policies
+├── operation
+│   ├── create
+│   ├── insert
+│   └── policies
+├── operation
+│   ├── create
+│   ├── insert
+│   └── policies
+└── README.md
+```
 
 ### Database User Table
 
