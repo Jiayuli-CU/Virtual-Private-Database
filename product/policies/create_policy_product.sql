@@ -17,7 +17,8 @@ BEGIN
     object_name => 'employees',
     policy_name => 'check_employee_policy',
     policy_function => 'check_employee',
-    statement_types => 'SELECT, UPDATE');
+    statement_types => 'SELECT, UPDATE'，
+    update_check => true);
 END;
 
 

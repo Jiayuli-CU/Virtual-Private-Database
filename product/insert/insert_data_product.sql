@@ -3,6 +3,8 @@ INSERT INTO DEPARTMENTS (ID, NAME) VALUES (2, 'PRODUCT');
 INSERT INTO DEPARTMENTS (ID, NAME) VALUES (3, 'MANAGEMENT');
 
 
+
+
 insert into EMPLOYEES (id, first_name, last_name, gender, department_id, position, access_level, base) values ('D0001', 'Park', 'Tonry', 'Male', 1, 'be', 'p1', 'CN');
 insert into EMPLOYEES (id, first_name, last_name, gender, department_id, position, access_level, base) values ('D0002', 'Krysta', 'Beyn', 'Female', 1, 'be', 'p2', 'CN');
 insert into EMPLOYEES (id, first_name, last_name, gender, department_id, position, access_level, base) values ('D0003', 'Roarke', 'Dietzler', 'Male', 1, 'be', 'p3', 'US');
