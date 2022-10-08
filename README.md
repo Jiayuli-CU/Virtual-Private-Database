@@ -33,6 +33,15 @@
 | P0002 | Abcd1234 | ds |
 | P0003 | abcd1234 | pr_manager |
 | P0004 | abcd1234 | ad_manager |
+| HR10001 |abcd1234 | hrbp |
+| HR10002 |abcd1234 | hr_manager |
+| ACC10001 | abcd1234 | accountant |
+| ACC10002 | abcd1234 | accountan_manager |
+| OP10001 | abcd1234 | operator |
+| OP10001 | abcd1234 | operator_manager |
+
+
+
 
 Testing
 
