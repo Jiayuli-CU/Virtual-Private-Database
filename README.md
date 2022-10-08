@@ -47,5 +47,5 @@ Testing
 
 `connect P0001`, then input password
 
-`select * from system.product_users;` 
+`select * from system.project_users;` 
 
