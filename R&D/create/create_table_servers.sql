@@ -2,7 +2,7 @@ DECLARE
 BEGIN
 EXECUTE IMMEDIATE 'CREATE TABLE servers
                    (
-                       id INT GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
+                       id INT NOT NULL,
                        name VARCHAR(32) UNIQUE NOT NULL,
                        ip VARCHAR(128) UNIQUE NOT NULL,
                        access_level CHAR(2) CHECK(access_level IN (''p0'',''p1'',''p2'', ''p3'')) NOT NULL,
