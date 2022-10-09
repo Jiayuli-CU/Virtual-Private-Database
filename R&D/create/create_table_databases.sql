@@ -2,7 +2,7 @@ DECLARE
 BEGIN
 EXECUTE IMMEDIATE 'CREATE TABLE databases
                    (
-                       id INT GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
+                       id INT UNIQUE NOT NULL,
                        name VARCHAR(32) UNIQUE NOT NULL,
                        link VARCHAR(128) UNIQUE NOT NULL,
                        access_level CHAR(2) CHECK(access_level IN (''p0'',''p1'',''p2'', ''p3'')) NOT NULL,
