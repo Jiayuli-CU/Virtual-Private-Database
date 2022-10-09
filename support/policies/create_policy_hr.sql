@@ -125,7 +125,7 @@ BEGIN
    ELSIF (SYS_CONTEXT('USERENV', 'SESSION_USER') = 'OPP10002') THEN
       return '';
    ELSE 
-   	 condition :='EMPLOYEE_ID=SYS_CONTEXT(''USERENV'', ''SESSION_USER'')';
+   	 condition :='APPLY_PERSON=SYS_CONTEXT(''USERENV'', ''SESSION_USER'')';
    END IF;
    	 RETURN condition;
 END check_administration_conference;
