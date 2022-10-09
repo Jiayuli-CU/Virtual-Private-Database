@@ -28,21 +28,24 @@
 
 ### Database User Table
 
-| Username | Password | ROLE       |
-| -------- | -------- | ---------- |
-| P0001 | abcd1234 | pd_manager |
-| P0002 | Abcd1234 | ds |
-| P0003 | abcd1234 | pr_manager |
-| P0004 | abcd1234 | ad_manager |
-| MK0001 | abcd1234 | product_operation |
-| MK0002 | abcd1234 | content_operation |
-| MK0003 | abcd1234 | activities_operation |
-| HR10001 |abcd1234 | hrbp |
-| HR10002 |abcd1234 | hr_manager |
-| ACC10001 | abcd1234 | accountant |
-| ACC10002 | abcd1234 | accountan_manager |
-| OP10001 | abcd1234 | operator |
-| OP10001 | abcd1234 | operator_manager |
+| Username    | Password | ROLE                 |
+|-------------| -------- |----------------------|
+| P0001       | abcd1234 | pd_manager           |
+| P0002       | Abcd1234 | ds                   |
+| P0003       | abcd1234 | pr_manager           |
+| P0004       | abcd1234 | ad_manager           |
+| MK0001      | abcd1234 | product_operation    |
+| MK0002      | abcd1234 | content_operation    |
+| MK0003      | abcd1234 | activities_operation |
+| HR10001     |abcd1234 | hrbp                 |
+| HR10002     |abcd1234 | hr_manager           |
+| ACC10001    | abcd1234 | accountant           |
+| ACC10002    | abcd1234 | accountan_manager    |
+| OP10001     | abcd1234 | operator             |
+| OP10001     | abcd1234 | operator_manager     |
+| D000[1,2,3] | abcd1234 | backend engineer     |
+| D000[4,5,6] | abcd1234 | frontend engineer    |
+| D000[7,8,9] | abcd1234 | test engineer        |
 
 
 
