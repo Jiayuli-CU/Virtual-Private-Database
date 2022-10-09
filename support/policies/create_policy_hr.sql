@@ -21,7 +21,7 @@ BEGIN
     object_name => 'HR_PERSON_DETAILS',
     policy_name => 'check_hr_person_details_policy',
     policy_function => 'check_hr_person_details',
-    statement_types => 'SELECT');
+    statement_types => 'SELECT，UPDATE, DELETE');
 END;
 
 
