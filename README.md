@@ -19,6 +19,7 @@
 │   ├── create
 │   ├── insert
 │   └── policies
+|   └── test 
 └── README.md
 ```
 * **create**: contains all .sql files for creating tables
