@@ -45,7 +45,7 @@ BEGIN
     object_name => 'advertisements',
     policy_name => 'check_ad_policy',
     policy_function => 'check_ad',
-    statement_types => 'UPDATE', 'DELETE');
+    statement_types => 'UPDATE, DELETE');
 END;
 
 --- pr manager can only update the advertisement he or she is working on.
@@ -66,7 +66,7 @@ BEGIN
     object_name => 'partnerships',
     policy_name => 'check_partnership_policy',
     policy_function => 'check_partnership',
-    statement_types => 'UPDATE', 'DELETE');
+    statement_types => 'UPDATE, DELETE');
 END;
 
 
@@ -88,7 +88,7 @@ BEGIN
     object_name => 'projects',
     policy_name => 'check_project_update_policy',
     policy_function => 'check_project_update',
-    statement_types => 'UPDATE','DELETE');
+    statement_types => 'UPDATE, DELETE');
 END;
 
 
