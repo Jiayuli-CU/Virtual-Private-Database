@@ -75,4 +75,11 @@ INSERT INTO DEPARTMENTS (ID, NAME) VALUES (2, 'PRODUCT');
 INSERT INTO DEPARTMENTS (ID, NAME) VALUES (3, 'SUPPORT');
 INSERT INTO DEPARTMENTS (ID, NAME) VALUES (4, 'OPERATION');
 
+insert into PARTNERSHIPS (id, project_id, company, manager_id, COUNTRY, length, disclosed, suing) values (1, 1, 'APPLE', 'P0003', 'US', 1, 'false', 'false');
+insert into PARTNERSHIPS (id, project_id, company, manager_id, COUNTRY, length, disclosed, suing) values (2, 2, 'FACEBOOK', 'P0006', 'SG', 1, 'false', 'false');
+insert into PARTNERSHIPS (id, project_id, company, manager_id, COUNTRY, length, disclosed, suing) values (3, 2, 'GOOGLE', 'P0006', 'US', 1, 'false', 'true');
+insert into PARTNERSHIPS (id, project_id, company, manager_id, COUNTRY, length, disclosed, suing) values (4, 2, 'NUS', 'P0003', 'US', 1, 'true', 'false');
+
+
+
 
