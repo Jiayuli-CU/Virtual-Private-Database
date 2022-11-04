@@ -42,6 +42,21 @@ EXEC SA_SYSDBA.ENABLE_POLICY ('PR_POL');
 
 
 BEGIN
+   SA_COMPONENTS.CREATE_LEVEL (
+      policy_name => 'PR_POL',
+      level_num   => 3000,
+      short_name  => 'HS',
+      long_name   => 'HIGHLY_SENSITIVE');
+
+   SA_COMPONENTS.CREATE_LEVEL (
+      policy_name => 'PR_POL',
+      level_num   => 2000,
+      short_name  => 'S',
+      long_name   => 'SENSITIVE');
+END;
+/
+
+BEGIN
    SA_USER_ADMIN.SET_LEVELS (
       policy_name  => 'PR_POL',
       user_name    => 'PRM', 
@@ -125,7 +140,7 @@ BEGIN
     policy_name    => 'PR_POL',
     schema_name    => 'CS5322', 
     table_name     => 'partnerships',
-    table_options  => 'WRITE_CONTROL');
+    table_options  => 'READ_CONTROL');
 END;
 /
 
