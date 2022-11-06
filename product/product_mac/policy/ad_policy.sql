@@ -19,6 +19,7 @@ GRANT CONNECT, ADVERTISER TO adm IDENTIFIED BY password;
 
 
 
+
 BEGIN
   SA_SYSDBA.DROP_POLICY ( 
     policy_name  => 'ADV_POL',
