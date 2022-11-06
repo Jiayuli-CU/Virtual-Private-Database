@@ -79,16 +79,15 @@ END;
 BEGIN
    SA_LABEL_ADMIN.CREATE_LABEL (
       policy_name  => 'ADF_POL',
-      label_tag    => 2100,
+      label_tag    => 3300,
       label_value  => 'S:OGN:', -- SENSITIVE level for the ONGOING compartment
       data_label   => TRUE);
 
    SA_LABEL_ADMIN.CREATE_LABEL (
       policy_name  => 'ADF_POL',
-      label_tag    => 2200,
-      label_value  => 'S:FSH:', --SENSITIVE level for the PRODUCT compartment
+      label_tag    => 3400,
+      label_value  => 'S:FSH:', --SENSITIVE level for the FINISHED compartment
       data_label   => TRUE);
-
 END;
 
 
@@ -140,11 +139,22 @@ UPDATE cs5322.ADMINISTRATION_FOOD SET FOOD_OLS_COL = CHAR_TO_LABEL('ADF_POL','S:
 UPDATE cs5322.ADMINISTRATION_FOOD SET FOOD_OLS_COL = CHAR_TO_LABEL('ADF_POL','S:OGN') WHERE STATUS = 'ONGOING';
 
 
+--给ad、adm权限-product部门
+Grant SELECT ON CS5322.ADMINISTRATION_FOOD TO ADVERTISER;
 
+BEGIN
+   SA_USER_ADMIN.SET_LEVELS (
+      policy_name  => 'ADF_POL',
+      user_name    => 'adm', 
+      max_level    => 'HS',
+      min_level    => 'S');
+END;
 
+BEGIN
 
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'ADF_POL',
+      user_name      => 'adm', 
+      max_read_label => 'S:OGN:');
 
-
-
-
-
+END;
