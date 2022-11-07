@@ -1,0 +1,32 @@
+insert into PROJECT_FEEDBACK (ID, PROJECT_ID, FEEDBACK, IMPROVEMENT, UPDATE_TIME, EMPLOYEE_ID, STATUS) values (1, 1, 'Good', 'No',TO_DATE('2/18/2022', 'mm/dd/yyyy'), 'MK068', 'completed');
+insert into PROJECT_FEEDBACK (ID, PROJECT_ID, FEEDBACK, IMPROVEMENT, UPDATE_TIME, EMPLOYEE_ID, STATUS) values (2, 2, 'Good', 'No',TO_DATE('3/3/2021', 'mm/dd/yyyy'), 'MK088', 'ongoing');
+insert into PROJECT_FEEDBACK (ID, PROJECT_ID, FEEDBACK, IMPROVEMENT, UPDATE_TIME, EMPLOYEE_ID, STATUS) values (3, 3, 'Good', 'No',TO_DATE('1/16/2021', 'mm/dd/yyyy'), 'MK021', 'ongoing');
+insert into PROJECT_FEEDBACK (ID, PROJECT_ID, FEEDBACK, IMPROVEMENT, UPDATE_TIME, EMPLOYEE_ID, STATUS) values (4, 4, 'Good', 'No',TO_DATE('1/1/2022', 'mm/dd/yyyy'), 'MK047', 'waiting');
+insert into PROJECT_FEEDBACK (ID, PROJECT_ID, FEEDBACK, IMPROVEMENT, UPDATE_TIME, EMPLOYEE_ID, STATUS) values (5, 5, 'Good', 'No',TO_DATE('1/1/2021', 'mm/dd/yyyy'), 'MK010', 'completed');
+insert into PROJECT_FEEDBACK (ID, PROJECT_ID, FEEDBACK, IMPROVEMENT, UPDATE_TIME, EMPLOYEE_ID, STATUS) values (6, 6, 'Good', 'No',TO_DATE('11/15/2021', 'mm/dd/yyyy'), 'MK062', 'waiting');
+insert into PROJECT_FEEDBACK (ID, PROJECT_ID, FEEDBACK, IMPROVEMENT, UPDATE_TIME, EMPLOYEE_ID, STATUS) values (7, 7, 'Good', 'No',TO_DATE('12/17/2022', 'mm/dd/yyyy'), 'MK059', 'completed');
+insert into PROJECT_FEEDBACK (ID, PROJECT_ID, FEEDBACK, IMPROVEMENT, UPDATE_TIME, EMPLOYEE_ID, STATUS) values (8, 8, 'Good', 'No',TO_DATE('1/4/2022', 'mm/dd/yyyy'), 'MK004', 'waiting');
+insert into PROJECT_FEEDBACK (ID, PROJECT_ID, FEEDBACK, IMPROVEMENT, UPDATE_TIME, EMPLOYEE_ID, STATUS) values (9, 9, 'Good', 'No',TO_DATE('4/21/2022', 'mm/dd/yyyy'), 'MK062', 'waiting');
+insert into PROJECT_FEEDBACK (ID, PROJECT_ID, FEEDBACK, IMPROVEMENT, UPDATE_TIME, EMPLOYEE_ID, STATUS) values (10, 10, 'Good', 'No',TO_DATE('4/2/2021', 'mm/dd/yyyy'), 'MK060', 'waiting');
+
+
+insert into PROJECT_COPYWRITING (ID, PROJECT_ID, EMPLOYEE_ID, GROUP_TYPE, CONTENT, PICTURE, UPDATE_TIME, STATUS) values (1, 1, 'MK0005', 'traditional', 'CONTENT', 'PICTURE',TO_DATE('11/6/2021', 'mm/dd/yyyy'), 'ongoing');
+insert into PROJECT_COPYWRITING (ID, PROJECT_ID, EMPLOYEE_ID, GROUP_TYPE, CONTENT, PICTURE, UPDATE_TIME, STATUS) values (2, 2, 'MK0003', 'new', 'CONTENT', 'PICTURE',TO_DATE('11/4/2021', 'mm/dd/yyyy'), 'completed');
+insert into PROJECT_COPYWRITING (ID, PROJECT_ID, EMPLOYEE_ID, GROUP_TYPE, CONTENT, PICTURE, UPDATE_TIME, STATUS) values (3, 3, 'MK0005', 'traditional', 'CONTENT', 'PICTURE',TO_DATE('6/1/2022', 'mm/dd/yyyy'), 'ongoing');
+insert into PROJECT_COPYWRITING (ID, PROJECT_ID, EMPLOYEE_ID, GROUP_TYPE, CONTENT, PICTURE, UPDATE_TIME, STATUS) values (4, 4, 'MK0004', 'traditional', 'CONTENT', 'PICTURE',TO_DATE('1/3/2021', 'mm/dd/yyyy'), 'ongoing');
+insert into PROJECT_COPYWRITING (ID, PROJECT_ID, EMPLOYEE_ID, GROUP_TYPE, CONTENT, PICTURE, UPDATE_TIME, STATUS) values (5, 5, 'MK0003', 'traditional', 'CONTENT', 'PICTURE',TO_DATE('9/1/2022', 'mm/dd/yyyy'), 'completed');
+insert into PROJECT_COPYWRITING (ID, PROJECT_ID, EMPLOYEE_ID, GROUP_TYPE, CONTENT, PICTURE, UPDATE_TIME, STATUS) values (6, 6, 'MK0005', 'traditional', 'CONTENT', 'PICTURE',TO_DATE('6/18/2021', 'mm/dd/yyyy'), 'completed');
+insert into PROJECT_COPYWRITING (ID, PROJECT_ID, EMPLOYEE_ID, GROUP_TYPE, CONTENT, PICTURE, UPDATE_TIME, STATUS) values (7, 7, 'MK0005', 'new', 'CONTENT', 'PICTURE',TO_DATE('11/9/2021', 'mm/dd/yyyy'), 'ongoing');
+insert into PROJECT_COPYWRITING (ID, PROJECT_ID, EMPLOYEE_ID, GROUP_TYPE, CONTENT, PICTURE, UPDATE_TIME, STATUS) values (8, 8, 'MK0005', 'traditional', 'CONTENT', 'PICTURE',TO_DATE('11/5/2021', 'mm/dd/yyyy'), 'completed');
+insert into PROJECT_COPYWRITING (ID, PROJECT_ID, EMPLOYEE_ID, GROUP_TYPE, CONTENT, PICTURE, UPDATE_TIME, STATUS) values (9, 9, 'MK0001', 'traditional', 'CONTENT', 'PICTURE',TO_DATE('5/5/2021', 'mm/dd/yyyy'), 'ongoing');
+
+insert into EVENT_PLANNING (ID, EMPLOYEE_ID, EVENT_TYPE, PURPOSE, BUDGET, EVENT_LOCATION, FINAL_TIME, STATUS) values (1, 'MK0003', 'team_buliding', 'PURPOSE', 20000, '渭南', TO_DATE('1/2/2022', 'mm/dd/yyyy'), 'ongoing');
+insert into EVENT_PLANNING (ID, EMPLOYEE_ID, EVENT_TYPE, PURPOSE, BUDGET, EVENT_LOCATION, FINAL_TIME, STATUS) values (2, 'MK0002', 'study', 'PURPOSE', 50000, '宜昌', TO_DATE('1/7/2021', 'mm/dd/yyyy'), 'completed');
+insert into EVENT_PLANNING (ID, EMPLOYEE_ID, EVENT_TYPE, PURPOSE, BUDGET, EVENT_LOCATION, FINAL_TIME, STATUS) values (3, 'MK0003', 'team_buliding', 'PURPOSE', 60000, '宜宾', TO_DATE('7/5/2021', 'mm/dd/yyyy'), 'ongoing');
+insert into EVENT_PLANNING (ID, EMPLOYEE_ID, EVENT_TYPE, PURPOSE, BUDGET, EVENT_LOCATION, FINAL_TIME, STATUS) values (4, 'MK0003', 'study', 'PURPOSE', 50000, '绍兴', TO_DATE('12/18/2022', 'mm/dd/yyyy'), 'completed');
+insert into EVENT_PLANNING (ID, EMPLOYEE_ID, EVENT_TYPE, PURPOSE, BUDGET, EVENT_LOCATION, FINAL_TIME, STATUS) values (5, 'MK0005', 'team_buliding', 'PURPOSE', 40000, '海口', TO_DATE('1/4/2022', 'mm/dd/yyyy'), 'ongoing');
+insert into EVENT_PLANNING (ID, EMPLOYEE_ID, EVENT_TYPE, PURPOSE, BUDGET, EVENT_LOCATION, FINAL_TIME, STATUS) values (6, 'MK0001', 'study', 'PURPOSE', 10000, '攀枝花', TO_DATE('6/2/2022', 'mm/dd/yyyy'), 'ongoing');
+insert into EVENT_PLANNING (ID, EMPLOYEE_ID, EVENT_TYPE, PURPOSE, BUDGET, EVENT_LOCATION, FINAL_TIME, STATUS) values (7, 'MK0004', 'study', 'PURPOSE', 30000, '洛阳', TO_DATE('7/1/2021', 'mm/dd/yyyy'), 'ongoing');
+insert into EVENT_PLANNING (ID, EMPLOYEE_ID, EVENT_TYPE, PURPOSE, BUDGET, EVENT_LOCATION, FINAL_TIME, STATUS) values (8, 'MK0001', 'meeting', 'PURPOSE', 10000, '沈阳', TO_DATE('11/10/2022', 'mm/dd/yyyy'), 'completed');
+insert into EVENT_PLANNING (ID, EMPLOYEE_ID, EVENT_TYPE, PURPOSE, BUDGET, EVENT_LOCATION, FINAL_TIME, STATUS) values (9, 'MK0002', 'lunch', 'PURPOSE', 50000, '淮安', TO_DATE('2/3/2022', 'mm/dd/yyyy'), 'ongoing');
+insert into EVENT_PLANNING (ID, EMPLOYEE_ID, EVENT_TYPE, PURPOSE, BUDGET, EVENT_LOCATION, FINAL_TIME, STATUS) values (10, 'MK0002', 'lunch', 'PURPOSE', 30000, '唐山', TO_DATE('2/9/2021', 'mm/dd/yyyy'), 'completed');
