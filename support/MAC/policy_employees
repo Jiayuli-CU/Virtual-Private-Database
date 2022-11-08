@@ -279,3 +279,216 @@ UPDATE cs5322.EMPLOYEES SET EMPLOYEES_OLS_COL = CHAR_TO_LABEL('EMPLOYEES_POL','S
 
 UPDATE cs5322.EMPLOYEES SET EMPLOYEES_OLS_COL = CHAR_TO_LABEL('EMPLOYEES_POL','S:SG,MKT') WHERE BASE = 'SG' AND DEPARTMENT_ID='5';
 
+---------------------
+--授予权限
+GRANT SELECT ON CS5322.EMPLOYEES TO SDE_BE_1;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'D0001', 
+      max_read_label => 'S:CN,DEV:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO SDE_BE_2;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'D0002', 
+      max_read_label => 'S:CN,DEV:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO SDE_BE_3;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'D0003', 
+      max_read_label => 'S:US,DEV:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO SDE_FE_1;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'D0004', 
+      max_read_label => 'S:SG,DEV:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO SDE_FE_2;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'D0005', 
+      max_read_label => 'S:CN,DEV:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO SDE_FE_3;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'D0006', 
+      max_read_label => 'S:US,DEV:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO SDE_TE_1;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'D0007', 
+      max_read_label => 'S:SG,DEV:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO SDE_TE_2;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'D0008', 
+      max_read_label => 'S:CN,DEV:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO SDE_TE_3;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'D0009', 
+      max_read_label => 'S:CN,DEV:');
+END;
+
+-- pm pmh pr prm ad adm ds dsm
+GRANT SELECT ON CS5322.EMPLOYEES TO ADVERTISER;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'ad', 
+      max_read_label => 'S:CN,PRD:');
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'adm', 
+      max_read_label => 'S:US,PRD:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO PUBLIC_RELATION;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'pr', 
+      max_read_label => 'S:SG,PRD:');
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'prm', 
+      max_read_label => 'S:CN,PRD:');
+END;
+
+--GRANT SELECT ON CS5322.EMPLOYEES TO LAWYER;
+--BEGIN
+--   SA_USER_ADMIN.SET_USER_LABELS (
+--      policy_name    => 'EMPLOYEES_POL',
+--      user_name      => 'law', 
+--      max_read_label => 'S:CN,DEV:');
+--END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO DATA_SCIENTIST;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'ds', 
+      max_read_label => 'S:SG,PRD:');
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'dsm', 
+      max_read_label => 'S:US,PRD:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO PROJECT_MANAGER;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'pm', 
+      max_read_label => 'S:CN,MKT:');
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'pmh', 
+      max_read_label => 'S:US,PRD:');
+END;
+
+--fb fbm ct_new ct_traditional ctm ac acm
+GRANT SELECT ON CS5322.EMPLOYEES TO ACTIVITY_OPERATION;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'ac', 
+      max_read_label => 'S:CN,MKT:');
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'acm', 
+      max_read_label => 'S:SG,MKT:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO FEEDBACK_OPERATION;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'fd', 
+      max_read_label => 'S:US,MKT:');
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'fdm', 
+      max_read_label => 'S:CN,MKT:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO FEEDBACK_OPERATION;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'fd', 
+      max_read_label => 'S:SG,MKT:');
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'fdm', 
+      max_read_label => 'S:CN,MKT:');
+END;
+
+GRANT SELECT ON CS5322.EMPLOYEES TO CONTENTS_OPERATION;
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'ct_traditional', 
+      max_read_label => 'S:SG,MKT:');
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'ct_new', 
+      max_read_label => 'S:CN,MKT:');
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'EMPLOYEES_POL',
+      user_name      => 'ctm', 
+      max_read_label => 'S:CN,MKT:');
+END;
+
+
+
