@@ -204,3 +204,139 @@ BEGIN
       max_read_label => 'S:PRD:');
 
 END;
+
+
+BEGIN
+
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'ASH_POL',
+      user_name      => 'adm', 
+      max_read_label => 'S:PRD:');
+
+END;
+
+--dsm,pmh,adm,prm
+BEGIN
+   SA_USER_ADMIN.SET_LEVELS (
+      policy_name  => 'ASH_POL',
+      user_name    => 'dsm', 
+      max_level    => 'HS',
+      min_level    => 'S');
+END;
+
+BEGIN
+
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'ASH_POL',
+      user_name      => 'dsm', 
+      max_read_label => 'S:PRD:');
+
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_LEVELS (
+      policy_name  => 'ASH_POL',
+      user_name    => 'pmh', 
+      max_level    => 'HS',
+      min_level    => 'S');
+END;
+
+BEGIN
+
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'ASH_POL',
+      user_name      => 'pmh', 
+      max_read_label => 'S:PRD:');
+
+END;
+
+BEGIN
+   SA_USER_ADMIN.SET_LEVELS (
+      policy_name  => 'ASH_POL',
+      user_name    => 'prm', 
+      max_level    => 'HS',
+      min_level    => 'S');
+END;
+
+BEGIN
+
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'ASH_POL',
+      user_name      => 'prm', 
+      max_read_label => 'S:PRD:');
+
+END;
+
+
+BEGIN
+   SA_USER_ADMIN.SET_LEVELS (
+      policy_name  => 'ASH_POL',
+      user_name    => 'adm', 
+      max_level    => 'HS',
+      min_level    => 'S');
+END;
+
+BEGIN
+
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'ASH_POL',
+      user_name      => 'adm', 
+      max_read_label => 'S:PRD:');
+
+END;
+
+--fbm ctm acm
+BEGIN
+   SA_USER_ADMIN.SET_LEVELS (
+      policy_name  => 'ASH_POL',
+      user_name    => 'fbm', 
+      max_level    => 'HS',
+      min_level    => 'S');
+END;
+
+BEGIN
+
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'ASH_POL',
+      user_name      => 'fbm', 
+      max_read_label => 'S:OP:');
+
+END;
+
+
+BEGIN
+   SA_USER_ADMIN.SET_LEVELS (
+      policy_name  => 'ASH_POL',
+      user_name    => 'ctm', 
+      max_level    => 'HS',
+      min_level    => 'S');
+END;
+
+BEGIN
+
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'ASH_POL',
+      user_name      => 'ctm', 
+      max_read_label => 'S:OP:');
+
+END;
+
+
+BEGIN
+   SA_USER_ADMIN.SET_LEVELS (
+      policy_name  => 'ASH_POL',
+      user_name    => 'acm', 
+      max_level    => 'HS',
+      min_level    => 'S');
+END;
+
+BEGIN
+
+   SA_USER_ADMIN.SET_USER_LABELS (
+      policy_name    => 'ASH_POL',
+      user_name      => 'acm', 
+      max_read_label => 'S:OP:');
+
+END;
+
+
