@@ -1,13 +1,13 @@
--- connect to system with pwd cs5322database --
-GRANT EXECUTE ON sa_components TO cs5322 WITH GRANT OPTION;
-GRANT EXECUTE ON sa_user_admin TO cs5322 WITH GRANT OPTION;
-GRANT EXECUTE ON sa_label_admin TO cs5322 WITH GRANT OPTION;
-GRANT EXECUTE ON sa_policy_admin TO cs5322 WITH GRANT OPTION;
-GRANT EXECUTE ON sa_audit_admin TO cs5322 WITH GRANT OPTION;
-
-GRANT LBAC_DBA TO cs5322;
-GRANT EXECUTE ON sa_sysdba TO cs5322;
-GRANT EXECUTE ON to_lbac_data_label TO cs5322;
+-- -- connect to system with pwd cs5322database --
+-- GRANT EXECUTE ON sa_components TO cs5322 WITH GRANT OPTION;
+-- GRANT EXECUTE ON sa_user_admin TO cs5322 WITH GRANT OPTION;
+-- GRANT EXECUTE ON sa_label_admin TO cs5322 WITH GRANT OPTION;
+-- GRANT EXECUTE ON sa_policy_admin TO cs5322 WITH GRANT OPTION;
+-- GRANT EXECUTE ON sa_audit_admin TO cs5322 WITH GRANT OPTION;
+--
+-- GRANT LBAC_DBA TO cs5322;
+-- GRANT EXECUTE ON sa_sysdba TO cs5322;
+-- GRANT EXECUTE ON to_lbac_data_label TO cs5322;
 
 -- connect to cs5322 with pwd password --
 
